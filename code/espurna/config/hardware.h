@@ -123,7 +123,7 @@
     #define RELAY1_PIN          5
     #define RELAY1_TYPE         RELAY_TYPE_NORMAL
 
-    // Light RGBW 
+    // Light RGBW
     #define LED1_PIN            2
     #define LED1_PIN_INVERSE    1
 
@@ -264,17 +264,21 @@
     #define BUTTON1_PIN         0
     #define BUTTON1_MODE        BUTTON_PUSHBUTTON | BUTTON_DEFAULT_HIGH
     #define BUTTON1_RELAY       1
-    #define BUTTON2_PIN         14
+
+    #define BUTTON2_PIN         3
     #define BUTTON2_MODE        BUTTON_SWITCH | BUTTON_SET_PULLUP | BUTTON_DEFAULT_HIGH
     #define BUTTON2_RELAY       1
+
+    // Was led
+    #define BUTTON3_PIN         13
+    #define BUTTON3_MODE        BUTTON_SWITCH | BUTTON_SET_PULLUP | BUTTON_DEFAULT_HIGH
 
     // Relays
     #define RELAY1_PIN          12
     #define RELAY1_TYPE         RELAY_TYPE_NORMAL
 
     // LEDs
-    #define LED1_PIN            13
-    #define LED1_PIN_INVERSE    1
+    // LED removed
 
 #elif defined(ITEAD_SONOFF_RF)
 
@@ -3301,9 +3305,9 @@
 
     // Relays
     #define RELAY1_PIN          15
-    #define RELAY1_TYPE         RELAY_TYPE_NORMAL 
- 
-    // Light RGBW 
+    #define RELAY1_TYPE         RELAY_TYPE_NORMAL
+
+    // Light RGBW
     #define RELAY_PROVIDER      RELAY_PROVIDER_LIGHT
     #define LIGHT_PROVIDER      LIGHT_PROVIDER_DIMMER
     #define DUMMY_RELAY_COUNT   1
@@ -3316,8 +3320,8 @@
     #define LIGHT_CH1_INVERSE   0
     #define LIGHT_CH2_INVERSE   0
     #define LIGHT_CH3_INVERSE   0
-    #define LIGHT_CH4_INVERSE   0	
-    
+    #define LIGHT_CH4_INVERSE   0
+
 // ----------------------------------------------------------------------------------------
 //  Smart life Mini Smart Socket is similar Homecube 16A but some GPIOs differ
 //  https://www.ebay.de/itm/Smart-Steckdose-WIFI-WLAN-Amazon-Alexa-Fernbedienung-Home-Socket-Zeitschaltuh-DE/123352026749?hash=item1cb85a8e7d:g:IasAAOSwk6dbj390
